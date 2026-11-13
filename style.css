@@ -85,11 +85,3 @@ main
             max-width: 800px;
         }
     }
-@media (prefers-reduced-motion: reduce) 
-    {
-        .nav-menu a,
-        .button 
-            {
-                transition: none !important;
-            }
-    }
