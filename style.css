@@ -27,11 +27,11 @@ main
         text-decoration: none;
         color: inherit;
         transition:all 0.3s ease;
-    }
-
-.nav-menu a:hover 
-    {
-        color: darkblue;
+        
+        &:hover
+        {
+            color: darkblue;
+        }
     }
 
 .card
@@ -52,11 +52,49 @@ main
         border-radius: 5px;
         cursor: pointer;
         transition: background-color 0.2s ease;
+
+        &:hover
+        {
+            background-color: #0044cc;
+        }
     }
 
-.button:hover
+#menuToggle
     {
-        background-color: #0044cc;
+        margin-bottom: 8px;
+    }
+
+#themeToggle
+    {
+        margin-top: 8px;
+    }
+
+#contactForm
+    {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        max-width: 400px;
+        align-items: center; 
+    }
+
+#formContainer
+    {
+        display: flex;
+        justify-content: center;
+    }
+
+.error-message
+    {
+        color: red;
+        font-size: 0.9em;
+    }
+
+.inputRow
+    {
+        display: flex;
+        gap: 8px;
+        align-items: center;
     }
 
 @media (min-width: 480px)

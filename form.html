@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Form</title>
+         <link rel="stylesheet" href="style.css">
+
+         <script src="/js/script.js"></script>
+    </head>
+        <body>
+            <nav>
+                <button id="menuToggle">Menu</button>
+                <ul class="nav-menu" />
+            </nav>
+            <main>
+                <h1>Form</h1>
+                <p>Get in touch with me by filling up these fields below.</p>
+            </main>
+
+            <div id="formContainer">
+                <form id="contactForm">
+                    <label for="name">Name:</label>
+                    <div class="inputRow">
+                        <input type="text" id="nameInput" name="name" required>
+                        <div id="successName">✅</div>
+                    </div>
+                    <label id="nameError" class="error-message"></label>
+                    <label for="email">Email:</label>
+                    <div class="inputRow">
+                        <input type="email" id="emailInput" name="email" required>
+                        <div id="successEmail">✅</div>
+                    </div>
+                    <label id="emailError" class="error-message"></label>
+                    <label for="message">Message:</label>
+                    <div class="inputRow">
+                        <textarea id="messageInput" name="message" required></textarea>
+                        <div id="successMessage">✅</div>
+                    </div> 
+                    <label id="messageError" class="error-message"></label>
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+            
+
+            <button id="themeToggle">Toggle Theme</button>
+        </body>
+</html>
